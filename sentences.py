@@ -22,6 +22,15 @@ def main():
     make_sentence(2, future)
 
 
+def make_sentence(quantity, tense):
+    determiner = get_determiner(quantity).title()
+    noun = get_noun(quantity)
+    verb = get_verb(quantity, tense)
+    
+
+    print(f"{determiner} {noun} {verb}")
+
+
 def get_determiner(quantity):
     if quantity == 1:
         words = ["a", "one", "the"]
@@ -61,12 +70,6 @@ def get_verb(quantity, tense):
     
 
 
-def make_sentence(quantity, tense):
-    determiner = get_determiner(quantity)
-    noun = get_noun(quantity)
-    verb = get_verb(quantity, tense)
-
-    print(f"{determiner} {noun} {verb}")
 
 
 

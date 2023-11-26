@@ -1,0 +1,5 @@
+For renaming all occurrances:
+
+I used now ctrl+shift+L 
+
+this will rename all the occurrences in program instead of using f2.
