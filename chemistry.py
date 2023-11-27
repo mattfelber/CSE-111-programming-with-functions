@@ -169,7 +169,29 @@ def get_formula_names(formula):
         "C13H16N2O2": "melatonin",
         "Fe2O3": "iron oxide",
         "FeS2": "iron pyrite",
-        "H2O": "water"
+        "H2O": "water",
+        "C6H12O6": "glucose",
+        "C10H16N2O3S": "penicillin",
+        "C2H4O2": "acetic acid",
+        "C3H6O": "acetone",
+        "C3H4O2": "propionic acid",
+        "C5H12": "pentane",
+        "C7H8": "toluene",
+        "C8H10": "xylene",
+        "C10H14O": "camphor",
+        "C12H22O11": "sucrose",
+        "NaCl": "sodium chloride",
+        "NH3": "ammonia",
+        "HCl": "hydrochloric acid",
+        "H2SO4": "sulfuric acid",
+        "CO2": "carbon dioxide",
+        "O2": "oxygen",
+        "N2": "nitrogen",
+        "H2": "hydrogen",
+        "Cl2": "chlorine",
+        "SO2": "sulfur dioxide",
+        "NO2": "nitrogen dioxide",
+        "CO": "carbon monoxide"
     }      
 
     if formula not in known_molecules_dict:
