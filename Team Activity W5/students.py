@@ -6,6 +6,7 @@ upper_limit = 999999999
 key_column_index = 0
 pair_column_index = 1
 
+
 def main():
     name_column_index = 1
     student_dictionary = read_dictionary("students.csv", key_column_index)
@@ -16,8 +17,6 @@ def main():
     name = pair[name_column_index]
     print(name)
    
-   
-
 
 def read_dictionary(filename, key_column_index):
     dictionary = {}
@@ -59,8 +58,6 @@ def get_key(prompt, low_limit, upper_limit):
     key = str(id)
     
     return key
-
-
 
 
 if __name__ == "__main__":
