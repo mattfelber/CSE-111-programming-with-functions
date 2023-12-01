@@ -1,8 +1,8 @@
 import csv
 
 
-def main():
 
+def main():
     key_column_index = 0
     dictionary_products = read_dictionary("products.csv", key_column_index)
     print(dictionary_products)
@@ -29,8 +29,6 @@ def main():
 
             else:
                 print(f"Product with key '{product}' not found in dictionary.")
-
-    
 
 
 
