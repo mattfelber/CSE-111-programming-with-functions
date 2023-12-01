@@ -4,11 +4,11 @@ from datetime import datetime
 
 def main():
     
-    print("\nGROCERY STORE\n")
+    
     key_column_index = 0
-    try:
-
+    try:  
         dictionary_products = read_dictionary("products.csv", key_column_index)
+        print("\nGROCERY STORE\n")
         #print(dictionary_products)
         print()
         print("YOUR CART:")
