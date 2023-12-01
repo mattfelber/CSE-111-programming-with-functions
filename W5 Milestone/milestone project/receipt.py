@@ -27,20 +27,23 @@ def main():
                 product = line[0]
                 quantity = int(line[1])
 
-                if product in dictionary_products:
+                try:    
                     
                     product_info = dictionary_products[product]
 
                     product_code = product_info[0]
                     product_name = product_info[1]
                     product_cost = float(product_info[2])
-                                   
+                                    
                     print(f"{product_name}: {quantity} @ ${product_cost}.")
                     sum_quantity += quantity
                     sum_subtotal += (quantity*product_cost)
+                
+                except KeyError:
+                    print(f"ERROR: unknown product ID in the request.csv file: '{product}'")
+                    break
 
-                else:
-                    print(f"Product with key '{product}' not found in dictionary.")
+
 
         sales_tax += (sum_subtotal*0.06)
         total += (sum_subtotal + sales_tax)
@@ -60,8 +63,6 @@ def main():
         print("File 'products.csv' not found.")
     except PermissionError:
         print("You don't have permission to access 'products.csv'.")
-    except KeyError:
-        print("Please check your values.")
 
 
 def read_dictionary(filename, key_column_index):
